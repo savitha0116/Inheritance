@@ -1,5 +1,5 @@
 package Inheritance;
-class Employee {
+class Employer {
     String companyName = "Tech Solutions Pvt Ltd";
 void displayCompany() {
         System.out.println("Company name is: " + companyName);
