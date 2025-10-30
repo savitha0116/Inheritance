@@ -10,19 +10,13 @@ class Bike extends Vehicle {
         System.out.println("Bike is running safely");
     }
 }
-
 public class MethodOverridingDemo {
     public static void main(String[] args) {
-        
-       Vehicle v1 = new Vehicle();
-        v1.run();  
-
-       
-        Bike b1 = new Bike();
-        b1.run();  
-
-        // Runtime Polymorphism: Parent reference -> Child object
-        Vehicle v2 = new Bike();
+  Vehicle v1 = new Vehicle();
+  v1.run();  
+Bike b1 = new Bike();
+    b1.run();  
+  Vehicle v2 = new Bike();
         v2.run(); 
     }
 }
