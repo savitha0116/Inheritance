@@ -1,0 +1,31 @@
+package Inheritance;
+
+// Parent class
+class Employer {
+    String companyName = "Tech Solutions Pvt Ltd";
+
+    void displayCompany() {
+        System.out.println("Company name is: " + companyName);
+    }
+}
+
+// Child class
+public class Employee extends Employer {
+    String empName;
+    int empId;
+
+    void displayEmpName(String empName) {
+        System.out.println("Employee name: " + empName);
+    }
+
+    void displayEmpId(int empId) {
+        System.out.println("Employee id: " + empId);
+    }
+
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+        emp.displayCompany();          
+        emp.displayEmpName("Savitha"); 
+        emp.displayEmpId(23456);       
+    }
+}
