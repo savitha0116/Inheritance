@@ -1,15 +1,11 @@
 package Inheritance;
-
-// Parent class
 class Employer {
     String companyName = "Tech Solutions Pvt Ltd";
-
-    void displayCompany() {
+void displayCompany() {
         System.out.println("Company name is: " + companyName);
     }
 }
 
-// Child class
 public class Employee extends Employer {
     String empName;
     int empId;
